@@ -17,7 +17,7 @@ Using:
   
   - PostgreSQL
   
-  -Swegger
+  - Swegger
   
   ==============================================
   
