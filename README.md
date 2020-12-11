@@ -27,7 +27,7 @@ Using:
     
     - Configure the "application.properties" file located in "src \ main \ resources"
     
-    - Edit the "application.properties" file with the Postgre, MySQL or other database settings.
+    - Edit the "application.properties" file with the Postgre, MySQL or other database settings(to use another database modify the dependencies in pom.xml).
     
     - Run the "ListapiApplication.java" class
     
@@ -66,7 +66,7 @@ Usando:
     
     - Configure o arquivo "application.properties" localizado em "src \ main \ resources"
     
-    - Edite o arquivo "application.properties" com Postgre, MySQL ou outro banco de dados.
+    - Edite o arquivo "application.properties" com Postgre, MySQL ou outro banco de dados(para usar outro banco de dados modifique as dependências no pom.xml).
     
     - Execue a classe "ListapiApplication.java"
     
