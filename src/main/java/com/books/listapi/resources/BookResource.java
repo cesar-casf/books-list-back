@@ -26,47 +26,47 @@ import com.books.listapi.models.*;
 @CrossOrigin(origins="*")
 public class BookResource {
 	@Autowired
-	BookRepository produtoRepository;
+	BookRepository bookRepository;
 
 	@GetMapping("/books")
 	@ApiOperation(value="Retorna todos os livros")
 	public List<Book> listBooks(){
-		return produtoRepository.findAll();
+		return bookRepository.findAll();
 	}
 
-		@GetMapping("/books/{id}")
+	@GetMapping("/books/id/{id}")
 	@ApiOperation(value="Retorna livro por ID")
 	public Book listOneBook(@PathVariable(value="id") long id) {
-		return produtoRepository.findById(id);
+		return bookRepository.findById(id);
 	}
 	
 	@GetMapping("/books/title/{title}")
 	@ApiOperation(value="Retorna livro por titulo")
 	public Book listOneBook(@PathVariable(value="title") String title) {
-		return produtoRepository.findByTitle(title);
+		return bookRepository.findByTitle(title);
 	}
 	
-	@GetMapping("/books/autor/{autor}")
+	@GetMapping("/books/{autor}")
 	@ApiOperation(value="Retorna livros por autor")
 	public List<Book> listByAutor(@PathVariable(value="autor") String autor) {
-		return produtoRepository.findByAutor(autor);
+		return bookRepository.findByAutor(autor);
 	}
 	
 	@PostMapping("/book")
 	@ApiOperation(value="Adiciona um livro")
-		public Book saveBook(@RequestBody Book book) {
-			return produtoRepository.save(book);
-		}
+	public Book saveBook(@RequestBody Book book) {
+		return bookRepository.save(book);
+	}
 	
 	@DeleteMapping("/book")
 	@ApiOperation(value="Deleta umlivro")
 	public void deletBook(@RequestBody Book book) {
-		produtoRepository.delete(book);
+		bookRepository.delete(book);
 	}
 	
 	@PutMapping("/book")
 	@ApiOperation(value="Edita um livro")
 	public Book editBook(@RequestBody Book book) {
-		return produtoRepository.save(book);
+		return bookRepository.save(book);
 	}
 }
