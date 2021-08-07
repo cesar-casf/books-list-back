@@ -6,6 +6,7 @@ ENGLISH
 ==============================================
 
 Back-End of the book registration application.
+Rest API
 
 ==============================================
 
@@ -14,6 +15,8 @@ Using:
   - Eclipse IDE
   
   - JDK 11
+  
+  - Spring Boot
   
   - PostgreSQL
   
@@ -45,6 +48,7 @@ PORTUGUÊS
 ==============================================
 
  Back-End da aplicação de registro de livros
+ Rest API
  
 ==============================================
 
@@ -53,6 +57,8 @@ Usando:
   - Eclipse IDE
   
   - JDK 11
+  
+  - Spring Boot
   
   - PostgreSQL
   
